@@ -1,0 +1,16 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cn.gamedog.dayspeedassist.fragment.VideoFragment">
+
+    <cn.gamedog.dayspeedassist.views.PullLoadMoreRecyclerView
+        android:id="@+id/pullLoadMoreRecyclerView"
+        android:layout_below="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+
+
+</FrameLayout>

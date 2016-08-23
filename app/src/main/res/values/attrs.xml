@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="JazzyViewPager">
+        <attr name="style">
+            <enum name="standard" value="0" />
+            <enum name="tablet" value="1" />
+            <enum name="cubein" value="2" />
+            <enum name="cubeout" value="3" />
+            <enum name="flipvertical" value="4" />
+            <enum name="fliphorizontal" value="5" />
+            <enum name="stack" value="6" />
+            <enum name="zoomin" value="7" />
+            <enum name="zoomout" value="8" />
+            <enum name="rotateup" value="9" />
+            <enum name="rotatedown" value="10" />
+            <enum name="accordion" value="11" />
+        </attr>
+        <attr name="fadeEnabled" format="boolean" />
+        <attr name="outlineEnabled" format="boolean" />
+        <attr name="outlineColor" format="color|reference" />
+    </declare-styleable>
+
+    <!-- 游戏狗 百分比布局 -->
+    <declare-styleable name="PercentLayout_Layout">
+        <attr name="layout_widthPercent" format="string" />
+        <attr name="layout_heightPercent" format="string" />
+        <attr name="layout_marginPercent" format="string" />
+        <attr name="layout_marginLeftPercent" format="string" />
+        <attr name="layout_marginTopPercent" format="string" />
+        <attr name="layout_marginRightPercent" format="string" />
+        <attr name="layout_marginBottomPercent" format="string" />
+        <attr name="layout_marginStartPercent" format="string" />
+        <attr name="layout_marginEndPercent" format="string" />
+        <attr name="layout_textSizePercent" format="string" />
+        <attr name="layout_maxWidthPercent" format="string" />
+        <attr name="layout_maxHeightPercent" format="string" />
+        <attr name="layout_minWidthPercent" format="string" />
+        <attr name="layout_minHeightPercent" format="string" />
+    </declare-styleable>
+
+    <!-- PagerSlidingTabStrip -->
+    <declare-styleable name="PagerSlidingTabStrip">
+        <attr name="pstsIndicatorColor" format="color" />
+        <attr name="pstsUnderlineColor" format="color" />
+        <attr name="pstsDividerColor" format="color" />
+        <attr name="pstsIndicatorHeight" format="dimension" />
+        <attr name="pstsUnderlineHeight" format="dimension" />
+        <attr name="pstsDividerPadding" format="dimension" />
+        <attr name="pstsTabPaddingLeftRight" format="dimension" />
+        <attr name="pstsScrollOffset" format="dimension" />
+        <attr name="pstsTabBackground" format="reference" />
+        <attr name="pstsShouldExpand" format="boolean" />
+        <attr name="pstsTextAllCaps" format="boolean" />
+    </declare-styleable>
+</resources>

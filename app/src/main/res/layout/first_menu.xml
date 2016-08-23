@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:materialdesign="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginLeft="8dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <com.gc.materialdesign.views.LayoutRipple
+            android:id="@+id/layout_zxxw"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="8dp"
+            android:layout_weight="1"
+            materialdesign:rippleColor="@color/glass"
+            android:background="@color/colorPrimary"
+            android:orientation="vertical" 
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/iv_1"
+                android:layout_width="75dp"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:layout_marginTop="3dp"
+                android:scaleType="fitXY"
+                android:src="@mipmap/ic_1"/>
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_1"
+                android:layout_centerHorizontal="true"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="1dp"
+                android:layout_marginBottom="3dp"
+                android:text="最新更新"
+                android:textColor="#fff"
+                android:textSize="17sp" />
+
+        </com.gc.materialdesign.views.LayoutRipple>
+
+        <com.gc.materialdesign.views.LayoutRipple
+            android:id="@+id/layout_jyjq"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="8dp"
+            android:layout_weight="1"
+            materialdesign:rippleColor="@color/glass"
+            android:orientation="vertical"
+            android:background="@color/colorPrimary"
+            android:gravity="center">
+            
+            <ImageView
+                android:id="@+id/iv_2"
+                android:layout_width="75dp"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:layout_marginTop="3dp"
+                android:scaleType="fitXY"
+                android:src="@mipmap/ic_2"/>
+            
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/iv_2"
+                android:text="车辆大全"
+                android:textColor="#fff"
+                android:textSize="17sp"
+                android:layout_marginTop="1dp"
+                android:layout_marginBottom="3dp"/>
+        </com.gc.materialdesign.views.LayoutRipple>
+
+        <com.gc.materialdesign.views.LayoutRipple
+            android:id="@+id/layout_lthd"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="8dp"
+            android:layout_weight="1"
+            materialdesign:rippleColor="@color/glass"
+            android:orientation="vertical"
+            android:background="@color/colorPrimary"
+            android:gravity="center">
+            
+            <ImageView
+                android:id="@+id/iv_3"
+                android:layout_width="75dp"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:layout_marginTop="3dp"
+                android:scaleType="fitXY"
+                android:src="@mipmap/ic_3"/>
+            
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/iv_3"
+                android:text="视频攻略"
+                android:textColor="#fff"
+                android:textSize="17sp"
+                android:layout_marginTop="1dp"
+                android:layout_marginBottom="3dp"/>
+        </com.gc.materialdesign.views.LayoutRipple>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="8dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginTop="4dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <com.gc.materialdesign.views.LayoutRipple
+            android:id="@+id/layout_kztj"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="8dp"
+            android:layout_weight="1"
+            materialdesign:rippleColor="@color/glass"
+            android:orientation="vertical"
+            android:background="@color/colorPrimary"
+            android:gravity="center">
+            
+            <ImageView
+                android:id="@+id/iv_4"
+                android:layout_width="75dp"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:layout_marginTop="3dp"
+                android:scaleType="fitXY"
+                android:src="@mipmap/ic_4"/>
+            
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/iv_4"
+                android:text="车手大全"
+                android:layout_marginTop="1dp"
+                android:textColor="#fff"
+                android:textSize="17sp"
+                android:layout_marginBottom="3dp"/>
+        </com.gc.materialdesign.views.LayoutRipple>
+
+        <com.gc.materialdesign.views.LayoutRipple
+            android:id="@+id/layout_mxms"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="8dp"
+            android:layout_weight="1"
+            materialdesign:rippleColor="@color/glass"
+            android:orientation="vertical"
+            android:background="@color/colorPrimary"
+            android:gravity="center">
+            
+            <ImageView
+                android:id="@+id/iv_5"
+                android:layout_width="75dp"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="3dp"
+                android:gravity="center"
+                android:scaleType="fitXY"
+                android:src="@mipmap/ic_5"/>
+            
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/iv_5"
+                android:text="游戏道具"
+                android:layout_marginTop="1dp"
+                android:textColor="#fff"
+                android:textSize="17sp"
+                android:layout_marginBottom="3dp"/>
+        </com.gc.materialdesign.views.LayoutRipple>
+
+        <com.gc.materialdesign.views.LayoutRipple
+            android:id="@+id/layout_ttgl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="8dp"
+            android:layout_weight="1"
+            materialdesign:rippleColor="@color/glass"
+            android:orientation="vertical"
+            android:background="@color/colorPrimary"
+            android:gravity="center">
+            
+            <ImageView
+                android:id="@+id/iv_6"
+                android:layout_width="75dp"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:layout_marginTop="3dp"
+                android:scaleType="fitXY"
+                android:src="@mipmap/ic_6"/>
+            
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/iv_6"
+                android:text="送爱心"
+                android:layout_marginTop="1dp"
+                android:textColor="#fff"
+                android:textSize="17sp"
+                android:layout_marginBottom="3dp"/>
+        </com.gc.materialdesign.views.LayoutRipple>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginLeft="8dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <com.gc.materialdesign.views.LayoutRipple
+            android:id="@+id/layout_zhsp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="8dp"
+            android:layout_weight="1"
+            materialdesign:rippleColor="@color/glass"
+            android:orientation="vertical"
+            android:background="@color/colorPrimary"
+            android:gravity="center">
+            
+            <ImageView
+                android:id="@+id/igv_yxtj"
+                android:layout_width="75dp"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:layout_marginTop="3dp"
+                android:scaleType="fitCenter"
+                android:src="@mipmap/ic_7"/>
+            
+            <TextView
+                android:id="@+id/tv_yxtj"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/igv_yxtj"
+                android:text="实用资料"
+                android:layout_marginTop="1dp"
+                android:textColor="#fff"
+                android:textSize="17sp"
+                android:layout_marginBottom="3dp"/>
+        </com.gc.materialdesign.views.LayoutRipple>
+
+        <com.gc.materialdesign.views.LayoutRipple
+            android:id="@+id/layout_dzsp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="8dp"
+            android:layout_weight="1"
+            materialdesign:rippleColor="@color/glass"
+            android:orientation="vertical"
+            android:background="@color/colorPrimary"
+            android:gravity="center">
+            
+            <ImageView
+                android:id="@+id/iv_8"
+                android:layout_width="75dp"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:layout_marginTop="3dp"
+                android:scaleType="fitCenter"
+                android:src="@mipmap/ic_8"/>
+            
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/iv_8"
+                android:text="攻略技巧"
+                android:layout_marginTop="1dp"
+                android:textColor="#fff"
+                android:textSize="17sp"
+                android:layout_marginBottom="3dp"/>
+        </com.gc.materialdesign.views.LayoutRipple>
+
+        <com.gc.materialdesign.views.LayoutRipple
+            android:id="@+id/layout_lslb"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="8dp"
+            android:layout_weight="1"
+            materialdesign:rippleColor="@color/glass"
+            android:orientation="vertical"
+            android:background="@color/colorPrimary"
+            android:gravity="center">
+            
+            <ImageView
+                android:id="@+id/iv_9"
+                android:layout_width="75dp"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:layout_marginTop="3dp"
+                android:scaleType="fitCenter"
+                android:src="@mipmap/ic_9"/>
+            
+            <TextView
+                android:id="@+id/tv_lbdq"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/iv_9"
+                android:text="礼包大全"
+                android:layout_marginTop="1dp"
+                android:textColor="#fff"
+                android:textSize="17sp"
+                android:layout_marginBottom="3dp"/>
+        </com.gc.materialdesign.views.LayoutRipple>
+    </LinearLayout>
+
+</LinearLayout>

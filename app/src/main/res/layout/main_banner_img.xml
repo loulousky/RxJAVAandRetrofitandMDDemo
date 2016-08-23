@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.gc.materialdesign.views.LayoutRipple xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:materialdesign="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:background="#00000000" >
+    <com.gc.materialdesign.views.LayoutRipple
+        android:id="@+id/mode_btn_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/touming"
+        materialdesign:rippleColor="@color/glass"
+        android:clickable="true" >
+
+    <ImageView
+        android:id="@+id/tuijian_header_img"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY" />
+    </com.gc.materialdesign.views.LayoutRipple>
+    <TextView
+        android:id="@+id/tv_bannertitle"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:paddingLeft="3dp"
+        android:gravity="center_vertical"
+        android:background="#aa3A3E41"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:maxLength="17"
+        android:textColor="#fff"
+        android:textSize="16sp" />
+
+
+</com.gc.materialdesign.views.LayoutRipple>

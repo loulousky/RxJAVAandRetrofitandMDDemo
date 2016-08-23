@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:materialdesign="http://schemas.android.com/apk/res-auto"
+    tools:context="cn.gamedog.dayspeedassist.TjPage">
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimary"
+        android:id="@+id/toolbar"
+        android:layout_height="?attr/actionBarSize"
+        materialdesign:contentInsetEnd="0dp"
+        materialdesign:contentInsetLeft="0dp"
+        materialdesign:contentInsetRight="0dp"
+        materialdesign:contentInsetStart="0dp"
+        >
+
+
+        <com.gc.materialdesign.views.LayoutRipple
+            android:id="@+id/mode_btn_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/touming"
+            materialdesign:rippleColor="@color/glass"
+            android:clickable="true" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:id="@+id/close_btn"
+                android:background="@mipmap/mode_btn" />
+
+
+        </com.gc.materialdesign.views.LayoutRipple>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="3dp"
+            android:layout_toRightOf="@+id/mode_btn_layout">
+
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+
+                android:layout_toLeftOf="@+id/btn_search"
+                android:background="@drawable/fb_edittext_frame"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                >
+
+                <EditText
+                    android:id="@+id/searched"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginTop="12dp"
+                    android:background="@null"
+                    android:drawableLeft="@mipmap/search"
+                    android:drawablePadding="5dp"
+                    android:hint="请输入搜索关键字"
+                    android:singleLine="true"
+                    android:textColor="#282D30"
+                    android:textCursorDrawable="@null"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/cancle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="15dp"
+                    android:src="@mipmap/search_delete"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <com.gc.materialdesign.views.ButtonFlat
+                android:id="@+id/btn_search"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="5dp"
+                android:text="搜索"
+                android:layout_marginLeft="5dp"
+                android:background="@color/white"
+                materialdesign:rippleColor="@color/glass"
+                />
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+
+
+
+    <cn.gamedog.dayspeedassist.views.PagerSlidingTabStrip
+        android:id="@+id/tabs"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/colorPrimary"
+        android:layout_below="@id/toolbar"/>
+
+    <cn.gamedog.dayspeedassist.views.JazzyViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tabs" />
+
+
+
+
+
+
+
+
+</RelativeLayout>

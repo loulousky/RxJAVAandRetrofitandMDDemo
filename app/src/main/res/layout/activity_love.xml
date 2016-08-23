@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:materialdesign="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_love"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ececec"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimary"
+        android:id="@+id/toolbar"
+        android:layout_height="?attr/actionBarSize"
+        materialdesign:contentInsetEnd="0dp"
+        materialdesign:contentInsetLeft="0dp"
+        materialdesign:contentInsetRight="0dp"
+        materialdesign:contentInsetStart="0dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="3dp"
+           >
+        <com.gc.materialdesign.views.LayoutRipple
+            android:id="@+id/mode_btn_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/touming"
+            android:layout_centerVertical="true"
+            materialdesign:rippleColor="@color/glass"
+            android:clickable="true" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:id="@+id/mode_btn"
+                android:background="@mipmap/mode_btn" />
+
+
+        </com.gc.materialdesign.views.LayoutRipple>
+
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/loveactivity"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:layout_centerInParent="true"/>
+
+
+            <com.gc.materialdesign.views.ButtonFlat
+                android:id="@+id/btn_search"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="5dp"
+                android:text="搜索"
+                android:layout_marginLeft="5dp"
+                android:background="@color/white"
+                materialdesign:rippleColor="@color/glass"
+                />
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+
+        <cn.gamedog.dayspeedassist.views.PullLoadMoreRecyclerView
+            android:id="@+id/listview"
+            android:layout_below="@+id/toolbar"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+
+             />
+
+    <com.gc.materialdesign.views.LayoutRipple
+        android:id="@+id/layout_liuyan"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimary"
+        materialdesign:rippleColor="@color/glass"
+        android:clickable="true"
+        android:gravity="center" >
+
+        <ImageView
+            android:id="@+id/iv_addtiezi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@mipmap/add_tiezi" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/iv_addtiezi"
+            android:text="我要留言"
+
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+    </com.gc.materialdesign.views.LayoutRipple>
+
+</RelativeLayout>
